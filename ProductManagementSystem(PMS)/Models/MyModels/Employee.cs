@@ -23,13 +23,13 @@ namespace ProductManagementSystem_PMS_.Models.MyModels
         [EmailAddress(ErrorMessage = "Invalid Email")]
         [StringLength(35)]
         [Index(IsUnique = true)]
-        [Remote("IsEmailAvailable", "Employees", ErrorMessage = "Email Already Exist.")]
+       // [Remote("IsEmailAvailable", "Employees", ErrorMessage = "Email Already Exist.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Mobile No is Required")]
         [StringLength(20)]
         [Index(IsUnique = true)]
-        [Remote("IsMobileAvailable", "Employees", ErrorMessage = "Mobile Number Already Exist.")]
+       // [Remote("IsMobileAvailable", "Employees", ErrorMessage = "Mobile Number Already Exist.")]
         public string Mobile { get; set; }
 
         [Required(ErrorMessage = "Date is Required")]
